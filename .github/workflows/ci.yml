@@ -27,7 +27,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn sonar:sonar -Dsonar.projectKey=your-project-key -Dsonar.organization=your-github-username
+        run: mvn sonar:sonar -Dsonar.projectKey=hkbigcat_HelloSpringBoot -Dsonar.organization=hkbigcat
 
       - name: Build JAR
         run: mvn package -DskipTests --no-transfer-progress
