@@ -1,0 +1,31 @@
+### Get all tasks
+GET http://localhost:8080/api/tasks
+
+### Get single task
+GET http://localhost:8080/api/tasks/1
+
+### Create task
+POST http://localhost:8080/api/tasks
+Content-Type: application/json
+
+{
+  "title": "Finish Java Enterprise learning",
+  "description": "Complete full CRUD",
+  "completed": false
+}
+
+### Update task
+PUT http://localhost:8080/api/tasks/1
+Content-Type: application/json
+
+{
+  "title": "Updated Task Title",
+  "description": "Updated description",
+  "completed": true
+}
+
+### Toggle complete
+PATCH http://localhost:8080/api/tasks/1/toggle
+
+### Delete task
+DELETE http://localhost:8080/api/tasks/1
