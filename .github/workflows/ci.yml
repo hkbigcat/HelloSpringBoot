@@ -31,3 +31,4 @@ jobs:
 
       - name: Build JAR
         run: mvn package -DskipTests --no-transfer-progress
+
